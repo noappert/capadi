@@ -3,7 +3,7 @@ echo "CAPADI: Backgrounding the background..."
 
 if [ -z "$1" ]; then
     echo "CAPADI: Aucun argument fourni, choix aléatoire."
-    RANDOMBG=$(( (RANDOM % 10) )) # Choisit un nombre entre 1 et 10
+    RANDOMBG=$(( (RANDOM % 10) ))
 else
     RANDOMBG="$1"
 fi
