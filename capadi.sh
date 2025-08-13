@@ -6,6 +6,6 @@ echo "CAPADI: Backgrounding the background..."
 # else
 #     RANDOMBG=$((RANDOM%1))
 # fi
-curl -L https://raw.githubusercontent.com/noappert/capadi/refs/heads/main/img/$1 -o ./bg.png
+curl -L https://raw.githubusercontent.com/noappert/capadi/refs/heads/main/img/$1.jpg -o ./bg.jpg
 gsettings set org.gnome.desktop.background picture-uri-dark './bg.png'
 gsettings set org.gnome.desktop.background picture-uri './bg.png'
