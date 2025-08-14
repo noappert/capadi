@@ -6,5 +6,5 @@ RANDOMBG=$((RANDOM % 2))
 
 echo "https://raw.githubusercontent.com/noappert/capadi/refs/heads/main/img/${RANDOMBG}.jpg"
 curl -L "https://raw.githubusercontent.com/noappert/capadi/refs/heads/main/img/${RANDOMBG}.jpg" -o ./bg.jpg
-echo $(gsettings set org.gnome.desktop.background picture-uri-dark './bg.jpg')
-echo $(gsettings set org.gnome.desktop.background picture-uri './bg.jpg')
+dconf write "/org/gnome/desktop/background/picture-uri-dark" './bg.jpg'
+dconf write "/org/gnome/desktop/background/picture-uri" './bg.jpg'
